@@ -1,0 +1,71 @@
+body, html{
+    height:100%;
+    margin:0;
+    font-size:16px;
+    font-family:"Lato", sans-serif;
+    font-weight:400;
+    line-height:1.8em;
+    color:#666;
+  }
+
+.logo, .dogs, .cats, .rabbits {
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+
+.logo {
+    background-image: url(assets/pexels-marián-šicko-4214919.jpg);
+    min-height: 100%;
+}
+
+.dogs {
+    background-image: url(assets/pexels-chevanon-photography-1108099.jpg);
+    min-height: 400px;
+}
+
+.cats {
+    background-image: url(assets/pexels-pixabay-45170.jpg);
+    min-height: 400px;
+}
+
+.rabbits {
+    background-image: url(assets/pexels-anna-shvets-4588065.jpg);
+    min-height: 400px;
+}
+
+.section {
+    text-align:center;
+    padding:50px 80px;
+}
+
+.imgtext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.imgtext .logo-border {
+    background-color: black;
+    color: darkorange;
+    padding: 20px;
+}
+
+.imgtext .border {
+    background-color: darkorange;
+    padding: 20px;
+}
+
+@media(max-width:568px) {
+    .logo, .dogs, .cats, .rabbits {
+        background-attachment: scroll;
+    }
+}
